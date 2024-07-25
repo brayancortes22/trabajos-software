@@ -1,0 +1,148 @@
+
+.metaloides{
+    text-align:center;
+    
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    width: 410px;
+    height: 100px;
+   margin-left: 200px;
+    border: solid 1px black;
+}
+.metales{
+
+    text-align:center;
+    
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    width: 410px;
+    height: 90px;
+    margin-top: 120px;
+   margin-left: 200px;
+    border: solid 1px black;
+}
+.menosuno{
+    margin-top: -10px;
+    margin-left: 120px;
+}
+.uno{
+    padding: 8px;
+    text-align: center;
+    margin-top: -20px;
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 100px;
+    height: 28px;
+    background-color: rgb(13, 90, 6);
+}
+
+.dos{
+    margin-top: -42px;
+    margin-left: 200px;
+    border-radius: 5px;
+    width: 200px;
+  
+}
+.tres{
+    border: solid 1px black;
+    margin-left: -80px;
+    border-radius: 5px;
+    width: 90px;
+    background-color: rgb(17, 166, 211);
+}
+.cuatro{
+    border: solid 1px black;
+    margin-left: 20px;
+    margin-top: -30px;
+    border-radius: 5px;
+    width: 90px;
+    background-color: rgb(17, 166, 211);
+}
+.cinco{
+    border: solid 1px black;
+    margin-left: 120px;
+    margin-top: -20px;
+    border-radius: 5px;
+    width: 90px;
+    background-color: rgb(17, 166, 211);
+}
+.metales{
+    position: absolute;
+    height: 100px;
+}
+.menos{
+    text-align: center;
+   
+}
+.primero{
+   
+    text-align: center;
+    margin-top: -20px;
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 90px;
+    
+    background-color: rgb(13, 90, 6);
+}
+
+.segundo{
+    margin-top: -20px;
+    margin-left: 155px;
+    border-radius: 5px;
+    width: 90px;
+    border: solid 1px black;
+    background-color: aqua;
+  
+}
+.tercero{
+    border: solid 1px black;
+    margin-top: -20px;
+    margin-left: 300px;
+    border-radius: 5px;
+    width: 100px;
+    background-color: rgb(17, 166, 211);
+}
+.cuarto{
+    border: solid 1px black;
+    margin-left: 20px;
+    margin-top: -4px;
+    border-radius: 5px;
+    width: 110px;
+    background-color: rgb(17, 166, 211);
+}
+.quinto{
+    border: solid 1px black;
+    margin-left: 155px;
+    margin-top: -30px;
+    border-radius: 5px;
+    width: 90px;
+    background-color: rgb(17, 166, 211);
+}
+.sexto{
+    border: solid 1px black;
+    margin-left: 270px;
+    margin-top: -1px;
+    border-radius: 5px;
+    width: 90px;
+    height: auto;
+    background-color: rgb(17, 166, 211);
+}
+.linea::before{
+    border-top: 1px solid black;
+    content: "";
+    display: inline-block;
+    margin:  1px;
+    transform: translateY(-3px);
+    width: 100px;
+}
+.linea::after{
+
+    border-top: 1px solid black;
+    content: "";
+    display: inline-block;
+    margin:  1px;
+    transform: translateY(-3px);
+    width: 100px;
+}

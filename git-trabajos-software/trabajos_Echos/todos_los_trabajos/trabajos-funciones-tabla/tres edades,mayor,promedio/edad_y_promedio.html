@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let edadUno,edadDos,edadTres,
+        yearbegihtUno,yearbegihtDos,yearbegithTres
+        ,yearnow,promedio;
+
+       yearnow =parseInt( prompt("digite año actual"));
+        yearbegihtUno=parseInt( prompt("digite año de nacimiento uno: "));
+        yearbegihtDos=parseInt( prompt("digite año de nacimiento dos :"));
+        yearbegithTres=parseInt( prompt("digite año de nacimiento tres :"));
+
+        edadUno=yearnow-yearbegihtUno;
+        edadDos=yearnow-yearbegihtDos;
+        edadTres=yearnow-yearbegithTres;
+        promedio=(edadUno+edadDos+edadTres)/3;
+        
+        if(edadUno>edadDos && edadUno>edadTres){
+            alert("edad uno es mayor que edad dos y tres ");
+            console.log("edad uno es mayor que edad dos y tres");
+        }
+        
+        else{
+
+        if(edadDos>edadUno && edadDos>edadTres){
+        alert("edad dos es mayor que edad uno y tres");
+        console.log("edad dos es mayr que edad uno y tres");
+        }
+        else{
+        alert("edad tres es mayor que edad dos y numero uno");
+        console.log("edad tres es mayor que edad dos y uno");
+        }
+}
+    if(promedio>18){
+        alert("el promedio de las edades son mayores de edad");
+        console.log("el promedio de las edades son mayores de edad");
+    }
+    else{
+        alert("el promedio de las edades son menores de edad");
+        console.log("el promedio de las edades son menores de edad");
+    }
+
+    </script>
+</body>
+</html>

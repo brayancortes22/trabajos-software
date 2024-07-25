@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>operaciones</title>
+  <link rel="stylesheet" href="booststrap/bootstrap-5.3.3-dist (2)/bootstrap-5.3.3-dist/css/bootstrap.css">
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.js"></script>
+
+  <link rel="stylesheet" href="/fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  
+
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="forma row col-10">
+      <div class="formulario col-7">
+        <form class="row g-3 needs-validation" onsubmit="return opercion();" novalidate>
+          <div class="col-md-12">
+            <label for="txtdias" class="form-label">dias trabajados</label>
+            <input type="number" class="form-control" id="txtdias" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <label for="txtvalor" class="form-label">valor de dias trabajados</label>
+            <input type="number" class="form-control" id="txtvalor" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+<br>
+            <div class="col-12">
+              <!-- funcion para idetifiar el salario de una persona -->
+            <button type="button" class="btn btn-primary" onclick="operacion('pagoTotal')">
+              salario de la persona
+            </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="forma row col-10">
+      <div class="formulario col-7">
+        <form class="row g-3 needs-validation" onsubmit="return operacion();" novalidate>
+          <div class="col-md-12">
+            <label for="txtnumeroUno" class="form-label">numero Uno / radio del circulo /base uno</label>
+            <input type="number" class="form-control" id="txtnumeroUno" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <label for="txtnumeroDos" class="form-label">numero Dos/altura uno/tabla 5/buzz</label>
+            <input type="number" class="form-control" id="txtnumeroDos" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-12">
+            <label for="txtnumeroTres" class="form-label">numero tres/base dos/tablas 5 limite/buzz</label>
+            <input type="number" class="form-control" id="txtnumeroTres" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+
+
+          <div class="col-md-12">
+            <label for="txtedad" class="form-label">edad 1</label>
+            <input type="date" class="form-control" id="txtedad" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <label for="txtedad2" class="form-label">edad 2</label>
+            <input type="date" class="form-control" id="txtedad2" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <label for="txtedad3" class="form-label">edad 3</label>
+            <input type="date" class="form-control" id="txtedad3" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <div class="respuesta col-9">
+        <h4>Respuesta</h4>
+        <div id="op"> </div>
+        <button type="button" class="btn btn-primary" onclick="operacion('contador')">Incrementar</button>
+        <button type="button" class="btn btn-primary" onclick="operacion('contador_consecutivo')">contador</button>
+        <button type="button" class="btn btn-primary" onclick="operacion('factorial')">factorial</button> 
+        <br><br>  
+        <button type="button" class="btn btn-primary" onclick="operacion('tabla_cinco')">tabla_5</button>
+        <button type="button" class="btn btn-primary" onclick="operacion('buzz_bass')">buzz_bass</button>
+        <br><br>
+        <div class="col-12">
+          <button type="button" class="btn btn-primary" onclick="operacion('suma')">
+            <i class="fa-solid fa-plus"></i>suma
+          </button>
+          <button type="button" class="btn btn-primary" onclick="operacion('resta')">
+            <i class="fa-solid fa-minus"></i>resta
+          </button>
+          <button type="button" class="btn btn-primary" onclick="operacion('multiplicacion')">
+            <i class="fa-solid fa-xmark"></i>multiplicacion
+          </button>
+          <button type="button" class="btn btn-primary" onclick="operacion('division')">
+            <i class="fa-solid fa-divide"></i>divicion
+          </button>
+          <!-- porcentaje de un numero -->
+          <button type="button" class="btn btn-primary" onclick="operacion('porcentaje')">
+            <i class="fa-solid fa-percent"></i>porcentaje
+          </button>
+          <!-- edad de una persona -->
+          <button type="button" class="btn btn-primary" onclick="operacion('edad')">
+            <i class="fa-solid fa-calendar-days"></i>edad
+          </button>
+          <!-- tres notas de un alumno-->
+          <button type="button" class="btn btn-primary" onclick="operacion('tres_notas')">
+            tres_notas
+            <i class="fa-regular fa-note-sticky"></i>
+          </button>
+          <br><br>
+          <!-- area del circulo-->
+          <button type="button" class="btn btn-primary" onclick="operacion('area_circulo')">
+            area_circulo
+            <i class="fa-solid fa-circle"></i>
+          </button>
+          <!-- edad de tres personas y sacar promedio -->
+          <button type="button" class="btn btn-primary" onclick="operacion('edad_promedio')">
+            <i class="fa-solid fa-calendar-days"></i>edad promedio
+          </button>
+          <!-- funcion para saludar -->
+          <button type="button" class="btn btn-primary" onclick="operacion('saludo')">
+            saludar
+          </button>
+          <!-- funcion para idetifiar numero mayor -->
+          <button type="button" class="btn btn-primary" onclick="operacion('numero_mayor')">
+            Numero_mayor
+          </button>
+          <br><br>
+          <!-- funcion para idetifiar edad mayor -->
+          <button type="button" class="btn btn-primary" onclick="operacion('edad_mayor')">
+            edad_mayor
+          </button>
+          <!-- funcion para idetifiar el triangulo mayor -->
+          <button type="button" class="btn btn-primary" onclick="operacion('triangulo_mayor')">
+            triangulo_mayor
+          </button>
+          <!-- funcion para idetifiar el numero mayor de tres numeros -->
+          <button type="button" class="btn btn-primary" onclick="operacion('tres_numeros_mayor')">
+            tres_numeros_mayor
+          </button>
+          <br><br>
+          <!-- funcion para idetifiar la edad mayor de las tres edades y sacar promedio-->
+          <button type="button" class="btn btn-primary" onclick="operacion('edades')">
+            tres_edades_mayor
+          </button>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/operar.js"></script>
+  <script src="js/operacione_salario.js"></script>
+  <script src="js/validate.js"></script>
+
+</body>
+
+</html>

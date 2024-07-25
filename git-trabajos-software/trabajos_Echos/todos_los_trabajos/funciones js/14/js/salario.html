@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let salario,pagoTotal,salud,arl,pension,
+        trasporte,renta,diaTrabajado,valorDia,deducible;
+        valorDia=50000
+
+        diaTrabajado=parseInt(prompt("digite sus dias trabajados"));
+
+        salario=diaTrabajado*valorDia;
+        salud=salario*0.12;
+        arl=salario*0.052;
+        pension= salario*0.16;
+        deducible=arl+salud+pension;
+
+        if(salario>(2*1300000)){
+            alert("usted no aplica para el subsidio de trasporte");
+            console.log("usted no aplica para el subsidio de traporte");
+            trasporte=0;
+        }
+        else{
+           alert("recibe el subsidio de trasporte");
+           console.log("reccibe el subsidio de trasporte");
+           trasporte=114000;
+        }
+        
+        if(salario>(4*1300000)){
+            alert("aplica para la renta");
+            console.log("aplica para la renta");
+            renta=salario*0.004;
+        }
+        else{
+            alert("no aplica para la renta");
+            console.log("no aplica para la renta ");
+            renta=0;
+        }
+        pagoTotal=salario-(deducible+renta)+trasporte;
+        alert( 
+        "salario inicial "+salario+"\n"+
+        "dias trabajados "+diaTrabajado+"\n"+
+        "el costo del arl es: "+arl+"\n"+
+        "el costo de salud es: "+salud+"\n"+
+        "el costo de la pension es: "+pension+"\n"+
+        "su deducible es=salud-pension-arl : "+deducible+"\n"+
+        "renta =* 0.004 : "+renta+"\n"+"trasporte:+ "+trasporte+" \n\n"+
+        "el pago por sus dias trabajados es: "+pagoTotal
+        );
+
+        console.log( 
+        "salario inicial "+salario+"\n"+
+        "dias trabajados "+diaTrabajado+"\n"+
+        "el costo del arl es: "+arl+"\n"+
+        "el costo de salud es: "+salud+"\n"+
+        "el costo de la pension es: "+pension+"\n"+
+        "su deducible es=salud-pension-arl : "+deducible+"\n"+
+        "renta =* 0.004 : "+renta+"\n"+"trasporte:+ "+trasporte+" \n\n"+
+        "el pago por sus dias trabajados es: "+pagoTotal
+        );
+    </script>
+</body>
+</html>

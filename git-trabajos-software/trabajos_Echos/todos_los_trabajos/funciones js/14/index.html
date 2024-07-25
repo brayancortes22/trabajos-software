@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="module" src="pago.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/pago.js"></script>
+</head>
+<body>
+    <script>
+        let pndias =parseInt( prompt("cuantos dias trabajo"));
+        let pvdias = parseInt( prompt("cual es el valor del dia"));
+        console.log(" el salario es: "+salario(pvdias,pndias));
+        console.log(" el salud es: "+salud(pvdias,pndias));
+        console.log(" el pension es: "+pension(pvdias,pndias));
+        console.log(" el arl es: "+arl(pvdias,pndias));
+        console.log("el deducible es " + deducible (pvdias,pndias));
+        console.log(" el pago es: "+pagoTotal(pvdias,pndias));
+        console.log(" el subtras es: "+subTras(pvdias,pndias));
+
+
+        console.log(" el salario es: "+salario1(pvdias,pndias));
+        console.log(" el salud es: "+salud1(pvdias,pndias));
+        console.log(" el pension es: "+pension1(pvdias,pndias));
+        console.log(" el arl es: "+arl1(pvdias,pndias));
+        console.log("el deducible es " + deducible1 (pvdias,pndias));
+        console.log(" el pago es: "+pagoTotal1(pvdias,pndias));
+        console.log(" el subtras es: "+subTras1(pvdias,pndias));
+    </script>
+</body>
+</html>

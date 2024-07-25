@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let edadUno,edadDos,edadTres,
+        yearbegihtUno,yearbegihtDos,yearbegithTres
+        ,yearnow,
+        suma,resultado,promedio;
+
+        promedio=3;
+       yearnow =parseInt( prompt("digite año actual"));
+        yearbegihtUno=parseInt( prompt("digite año de nacimiento uno: "));
+        yearbegihtDos=parseInt( prompt("digite año de nacimiento dos :"));
+        yearbegithTres=parseInt( prompt("digite año de nacimiento tres :"));
+
+        edadUno=yearnow-yearbegihtUno;
+        edadDos=yearnow-yearbegihtDos;
+        edadTres=yearnow-yearbegithTres;
+
+        suma=edadUno+edadDos+edadTres;
+        resultado=suma/promedio;
+         
+        alert("el promedio de las edades es : "+resultado);
+        console.log(resultado);
+    </script>
+</body>
+</html>

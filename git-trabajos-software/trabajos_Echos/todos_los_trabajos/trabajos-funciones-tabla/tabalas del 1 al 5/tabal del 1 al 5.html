@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let contarPar,contarImpar, multi, total,tabla,contador,resultado,numero;
+        multi=5;
+        numero=5;
+        for(tabla=1; tabla<=multi;tabla++){
+            contador=0;
+            for(contador=0;contador<=numero; contador++){
+                resultado=tabla*contador;
+                if(resultado %2===0){
+                    alert("buzz");
+                    console.log("buzz");
+                    contarPar=contarPar+1;
+                }
+                else{
+                    alert("bass");
+                    contarImpar=contarImpar+1;
+                }
+                total=resultado;
+                alert(total);
+                console.log(total);
+            }
+        }
+        alert("cantidad de numeros pares"+contarPar+":"+resultado+"\n"+"cantidad de numeros imapres"+contarImpar+resultado+":");
+        console.log("cantidad de numeros pares"+contarPar+":"+resultado+"\n"+"cantidad de numeros imapres"+contarImpar+resultado+":");
+
+    </script>
+</body>
+</html>
